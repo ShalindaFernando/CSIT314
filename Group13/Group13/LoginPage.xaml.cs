@@ -18,7 +18,7 @@ namespace Group13
 
         private async void Login_Check(object sender, EventArgs e)
         {
-            if (Username.Text == "jarrod"/* Change to check array for username */ && Password.Text == "jarrod" /*Change to check array for password*/)
+            if (Username.Text == ""/* Change to check array for username */ && Password.Text == "" /*Change to check array for password*/)
             {
                 await Navigation.PushAsync(new HomePage());
             }
