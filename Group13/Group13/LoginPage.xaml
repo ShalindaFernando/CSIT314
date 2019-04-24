@@ -4,14 +4,17 @@
         <StackLayout>
             <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10, 10, 10, 10">
                 <Grid.RowDefinitions>
-                  <RowDefinition />
-                  <RowDefinition />
-                  <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
             
-                <Entry x:Name="Username" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
-                <Entry x:Name="Password" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" IsPassword="true" />
+                <Entry x:Name="Username" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Text="jarrod" />
+                <Entry x:Name="Password" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" IsPassword="true" Text="jarrod" />
                 <Button x:Name="LogIn" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Clicked="Login_Check" Text="Log In" TextColor="White" BackgroundColor="Black"/>
+                
+                <Label Grid.Row="3" x:Name="RegisterLabel" Text="Need an account? Sign up here!" FontSize="Small" HorizontalOptions="CenterAndExpand" VerticalOptions="End" />
             </Grid>
         </StackLayout>
     </ContentPage.Content>

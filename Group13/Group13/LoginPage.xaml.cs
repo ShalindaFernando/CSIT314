@@ -13,12 +13,14 @@ namespace Group13
             NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
 
-
+            var tgr = new TapGestureRecognizer();
+            tgr.Tapped += (s, e) => ToRegisterPage();
+            RegisterLabel.GestureRecognizers.Add(tgr);
         }
 
         private async void Login_Check(object sender, EventArgs e)
         {
-            if (Username.Text == ""/* Change to check array for username */ && Password.Text == "" /*Change to check array for password*/)
+            if (Username.Text == "jarrod"/* Change to check array for username */ && Password.Text == "jarrod" /*Change to check array for password*/)
             {
                 await Navigation.PushAsync(new HomePage());
             }
@@ -26,7 +28,11 @@ namespace Group13
             {
                 await DisplayAlert("Error", "User not found. Please register for a new account", "Ok");
             }
+        }
 
+        public async void ToRegisterPage()
+        {
+            await Navigation.PushAsync(new Registration.UserDetails());
         }
     }
 }

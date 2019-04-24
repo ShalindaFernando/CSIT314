@@ -35,7 +35,8 @@ namespace Group13
 
             using (var reader = new System.IO.StreamReader(stream))
             {
-                text = reader.ReadToEnd();
+                text = reader.ReadLine();
+                //text = reader.ReadToEnd();
             }
             System.Diagnostics.Debug.WriteLine("Reading text file.");
             System.Diagnostics.Debug.WriteLine(text);

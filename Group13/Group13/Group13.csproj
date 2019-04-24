@@ -28,4 +28,7 @@
   <ItemGroup>
     <EmbeddedResource Include="UsersData.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Registration\" />
+  </ItemGroup>
 </Project>
