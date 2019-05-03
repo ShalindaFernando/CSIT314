@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Group13.HomePage">
     <ContentPage.Content>
-        <ScrollView x:Name="sview" />
+        <ScrollView x:Name="sview">
+            <Label Text="Home-Page" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
