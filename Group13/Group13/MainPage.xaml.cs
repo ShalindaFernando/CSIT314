@@ -15,7 +15,6 @@ namespace Group13
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(true)]
 
-
     public partial class MainPage : ContentPage
     {
         List<Users> UserArray = new List<Users>(50);

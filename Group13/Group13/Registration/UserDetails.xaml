@@ -36,7 +36,7 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 
-                <Button Grid.Row="0" Grid.Column="0" Text="Previous" HorizontalOptions="StartAndExpand" VerticalOptions="End" WidthRequest="150" HeightRequest="50" BackgroundColor="Transparent" TextColor="White" BorderColor="White" Clicked="PrevPage" />
+                <Button Grid.Row="0" Grid.Column="0" Text="Previous" HorizontalOptions="StartAndExpand" VerticalOptions="End" WidthRequest="150" HeightRequest="50" BackgroundColor="Transparent" TextColor="White" BorderColor="White" BorderWidth="1" Clicked="PrevPage" />
                 <Button Grid.Row="0" Grid.Column="1" Text="Next" HorizontalOptions="EndAndExpand" VerticalOptions="End" WidthRequest="150" HeightRequest="50" BackgroundColor="Transparent" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="33" Clicked="NextPage" />
             </Grid>
 
